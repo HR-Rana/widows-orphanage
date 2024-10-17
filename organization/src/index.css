@@ -24,9 +24,12 @@
 
 
 
-  --primaryColor:#0340b9;
+  --primaryColor:#0076bf;
+  --assistColor:rgb(0, 168, 25);
   --secondary:black;
   --gray: rgb(228, 228, 228);
+  --white:white;
+  --border:rgb(168, 168, 168);
 
 }
 .flex{
@@ -119,4 +122,49 @@ nav ul li a{
   font-weight: 500;
   font-size: 18px;
   color: black;
+}
+
+
+
+.hero-section{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding: 15px 25px;
+ 
+}
+.hero-section .title{
+  width: 48%;
+  height: 100%;
+ margin: auto 0;
+ display: flex;
+ flex-direction: column;
+ gap: 25px 0;
+}
+.hero-section .title h2{
+  font-size: 45px;
+}
+.hero-section .title h4{
+  font-size: 25px;
+}
+.hero-section .title button{
+  width: 30%;
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero-section .hero-img{
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-section img{
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: flex-end;
 }
