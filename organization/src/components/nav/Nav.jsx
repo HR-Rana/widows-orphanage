@@ -26,8 +26,8 @@ export default function Nav() {
             label:"Success Stories",
             path:'/success-stories'
         },{
-            label:"FAQs",
-            path:'/FAQs'
+            label:"Mission",
+            path:'/Mission'
         },{
             label:"Contact us",
             path:'/Contact-us'

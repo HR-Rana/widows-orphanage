@@ -47,6 +47,28 @@
 .gap-10{
   gap: 10px;
 }
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+section{
+  padding: 0px 10px;
+  margin: 50px 0;
+  padding: 75px 10px; 
+
+} 
+
+
+
+
+
+
+
+
+
+
+
 
 nav ul li{
   list-style: none;
@@ -77,6 +99,16 @@ nav ul li a {
 .navigation-bar .socials{
   width: 25%;
   padding: 0px 10px;
+}
+.navigation-bar .socials li a{
+  color: var(--primaryColor);
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}.navigation-bar .socials li a:hover{
+  color: var(--assistColor);
 }
 .navigation-bar .socials li svg{
   font-size: 22px;
@@ -131,6 +163,7 @@ nav ul li a{
   height: 100%;
   align-items: center;
   padding: 15px 25px;
+  background-attachment: fixed;
  
 }
 .hero-section .title{
@@ -143,6 +176,12 @@ nav ul li a{
 }
 .hero-section .title h2{
   font-size: 45px;
+  background: linear-gradient(to right, var(--primaryColor), var(--assistColor));
+  background-size:100%;
+  color: transparent;
+  background-clip: text;
+  animation: herotitle 4s linear infinite;
+  -webkit-animation: herotitle 4s linear infinite;
 }
 .hero-section .title h4{
   font-size: 25px;
@@ -156,6 +195,14 @@ nav ul li a{
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+.hero-section .title button:hover{
+  background-color: var(--assistColor);
 }
 .hero-section .hero-img{
   width: 48%;
@@ -167,4 +214,16 @@ nav ul li a{
   height: 100%;
   margin: 0 auto;
   justify-content: flex-end;
+}
+
+
+
+.about-section {}
+.about-section img{
+  box-shadow: 0px 0px 5px rgba(168, 168, 168, 0.511);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
