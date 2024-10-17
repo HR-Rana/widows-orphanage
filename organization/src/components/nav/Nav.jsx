@@ -19,8 +19,8 @@ export default function Nav() {
             path: '/about'
         },
         {
-            label: 'Services',
-            path: '/services'
+            label: 'Programme',
+            path: '/programme'
         },
         {
             label:"Success Stories",
