@@ -39,12 +39,8 @@ export default function Gallery() {
           {
             filter.map((items, index)=>{
               return (
-                <div key={index} className='gallery-item'>
+                <div key={index} className='item'>
                   <img src={items.image} alt={items.name}/>
-                  <div className='gallery-item-info'>
-                    <h3>{items.name}</h3>
-                    <p>{items.description}</p>
-                  </div>
                 </div>
               )
             })
@@ -56,7 +52,7 @@ export default function Gallery() {
           {
             filter.map((items, index)=>{
               return (
-                <div key={index} className='gallery-item'>
+                <div key={index} className='item'>
                   <img src={items.image} alt={items.name}/>
                   <div className='gallery-item-info'>
                     <h3>{items.name}</h3>
@@ -73,7 +69,7 @@ export default function Gallery() {
           {
             filter.map((items, index)=>{
               return (
-                <div key={index} className='gallery-item'>
+                <div key={index} className='item'>
                   <img src={items.image} alt={items.name}/>
                   <div className='gallery-item-info'>
                     <h3>{items.name}</h3>
@@ -90,7 +86,7 @@ export default function Gallery() {
           {
             video.map((items, index)=>{
               return (
-                <div key={index} className='gallery-item'>
+                <div key={index} className='item'>
                   <video src={'https://www.youtube.com/watch?v=l8QMO7DM5vc&pp=ygUGd2lkb3dz'} controls width={'100%'} type="video/mp4"></video>
                 </div>
               )
