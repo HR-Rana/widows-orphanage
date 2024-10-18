@@ -81,23 +81,26 @@ import orphanage5 from '../images/gallary/orphanage (5).jpg'
 
 
 
-export const Gallary = {
-        widows:[
-            {image:widow1, alt:"widow1"},
-            {image:widow2, alt:"widow2"},
-            {image:widow3, alt:"widow3"},
-            {image:widow4, alt:"widow4"},
-            {image:widow5, alt:"widow5"},
-        ],
-        orphanage:[
-            {image:orphanage1, alt:"orphan1"},
-            {image:orphanage2, alt:"orphan2"},
-            {image:orphanage3, alt:"orphan4"},
-            {image:orphanage4, alt:"orphan3"},
-            {image:orphanage5, alt:"orphan5"},
+export const Gallary = [
+            {image:widow1, alt:"widow1", catagory:"widows"},
+            {image:orphanage1, alt:"orphan1", catagory:"orphanage"},
+            {image:widow2, alt:"widow2", catagory:"widows"},
+            {image:orphanage3, alt:"orphan4", catagory:"orphanage"},
+            {image:widow3, alt:"widow3", catagory:"widows"},
+            {image:widow4, alt:"widow4", catagory:"widows"},
+            {image:orphanage4, alt:"orphan3", catagory:"orphanage"},
+            {image:widow5, alt:"widow5", catagory:"widows"},
+            {image:orphanage2, alt:"orphan2", catagory:"orphanage"},
+            {image:orphanage5, alt:"orphan5", catagory:"orphanage"},
         ]
-}
 
+export const GallaryVideos = [
+    {image:"https://www.youtube.com/watch?v=l8QMO7DM5vc&pp=ygUGd2lkb3dz", alt:"orphan5", catagory:"video"},
+    {image:"https://www.youtube.com/watch?v=g1FklcCOxEU&pp=ygUGd2lkb3dz", alt:"orphan5", catagory:"video"},
+    {image:'https://www.youtube.com/watch?v=9_KlDtmhSYY&pp=ygUJb3JwaGFuYWdl', alt:"orphan5", catagory:"video"},
+    {image:"https://www.youtube.com/watch?v=2lLZedgFJsw&pp=ygUJb3JwaGFuYWdl", alt:"orphan5", catagory:"video"},
+    {image:"https://www.youtube.com/watch?v=82yTzlXeIwE&pp=ygUGd2lkb3dz", alt:"orphan5", catagory:"video"},
+]
 
 
 
