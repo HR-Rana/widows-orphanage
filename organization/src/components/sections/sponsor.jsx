@@ -75,7 +75,7 @@ export default function Sponsor() {
   return (
     <div className='sponsor-section'>
       <div>
-         <h3>Top Sponsor By</h3>
+         <h3>Top Sponsor </h3>
       </div><br />
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}

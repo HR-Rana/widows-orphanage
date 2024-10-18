@@ -285,8 +285,26 @@ nav ul li a{
   height: 350px;
 }
 
-
-
+.react-tabs__tab-list{
+  
+}
+.react-tabs__tab-list .tabs-items{
+  width: 50% !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+ .react-tabs__tab-list  .react-tabs__tab{
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 7px 25px;
+}
+.react-tabs__tab--selected {
+  background-color: var(--assistColor);
+  color: var(--white);
+}
 
 
 
@@ -295,7 +313,9 @@ nav ul li a{
 
 /* sponsor list  */
 
-.sponsor-section{}
+.sponsor-section{
+  margin: 50px 0;
+}
 .sponsor-section h3{
   text-align: center;
   font-size: 36px;
@@ -312,6 +332,9 @@ nav ul li a{
 .sponsor-section .items img{
   height: 50px;
 }
+
+
+
 
 .swiper {
   width: 100%;
