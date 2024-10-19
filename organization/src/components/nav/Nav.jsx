@@ -16,7 +16,7 @@ export default function Nav() {
         },
         {
             label: 'About',
-            path: '/about'
+            path: '/#About'
         },
         {
             label: 'Programme',

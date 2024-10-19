@@ -3,7 +3,7 @@ import { About } from '../../assets/data/fakedata'
 
 export default function AboutSection() {
   return (
-    <div className='about-section flex justify-between'>
+    <div className='about-section flex justify-between' id="About">
         <div className="text">
           <h3>{About.title}</h3>
           <p>{About.text}</p>

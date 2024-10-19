@@ -138,3 +138,21 @@ export const sponsor = [
 
 
 
+
+
+
+
+export const missionVission = {
+        mission:{
+            title:"Mission",
+            text:"Our mission is to provide compassionate support, education, and empowerment to widows and orphaned children, ensuring they have the resources and opportunities to live with dignity and hope. We are dedicated to creating a nurturing environment that meets their basic needs, fosters their growth, and helps them build a brighter future."
+        },
+        image:{
+            // image:missionImg,
+            alt:"mission"
+        },
+        vission:{
+            title:"Vision",
+            text:"Our vision is a world where widows and orphans are valued and supported, with access to education, healthcare, and opportunities for a fulfilling life. We strive to create a community where every widow and orphan can overcome their challenges, achieve their potential, and contribute positively to society."
+        }
+}
