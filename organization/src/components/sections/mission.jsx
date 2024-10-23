@@ -1,17 +1,21 @@
 import React from 'react'
 import { missionVission } from '../../assets/data/fakedata'
+import mission from '../../assets/images/mission (2).jpg'
+
+
+
 
 export default function Mission_Vission() {
   return (
-    <div className='mission-section'>
-        <div className="flex justify-between">
+    <div className='mission-section' id='Mission'>
+        <div className="flex justify-between mission-container">
             <div className="image-site">
                 <span>
-                    <img src={''} alt={missionVission.image.alt} />
+                    <img src={mission} alt={missionVission.image.alt} />
                 </span>
             </div>
             <div className="text-site">
-                <div className="mision">
+                <div className="mission">
                   <span>
                       <h3>{missionVission.mission.title}</h3>
                   </span>

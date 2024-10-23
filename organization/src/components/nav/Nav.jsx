@@ -12,25 +12,25 @@ export default function Nav() {
     const navItems = [
         {
             label: 'Home',
-            path: '/'
+            path: '#'
         },
         {
             label: 'About',
-            path: '/#About'
+            path: '#About'
         },
         {
             label: 'Programme',
-            path: '/programme'
+            path: '#Programme'
         },
         {
             label:"Success Stories",
-            path:'/success-stories'
+            path:'#success-stories'
         },{
             label:"Mission",
-            path:'/Mission'
+            path:'#Mission'
         },{
             label:"Contact us",
-            path:'/Contact-us'
+            path:'#Contact-us'
         },
     ]
   return (
@@ -56,7 +56,7 @@ export default function Nav() {
                       {
                         navItems.map(({ label, path }) => (
                           <li key={label}>
-                            <NavLink to={path}>{label}</NavLink>
+                            <a href={path}>{label}</a>
                           </li>
                         ))
                       }

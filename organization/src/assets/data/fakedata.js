@@ -156,3 +156,10 @@ export const missionVission = {
             text:"Our vision is a world where widows and orphans are valued and supported, with access to education, healthcare, and opportunities for a fulfilling life. We strive to create a community where every widow and orphan can overcome their challenges, achieve their potential, and contribute positively to society."
         }
 }
+
+
+
+
+
+
+
