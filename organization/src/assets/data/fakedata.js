@@ -44,10 +44,10 @@ export const achivements = {
 
 
 // programme data
-
+import semminer from '../images/banners/programme (2).jpg'
 export const programme ={
     title: 'Our Programme',
-    text: 'We offer a wide range of programsme designed to support our widows and orphans. Our primary focus is on education, healthcare, and shelter, as well as emotional support and vocational training. Our programsme cater to different age groups, abilities, and socioeconomic backgrounds, ensuring that every child and widow feels valued and loved. Together, we strive to restore dignity, build self-sufficiency, and create lasting change, one life at a time.',
+    text: 'We offer a wide range of programsme designed to support our widows and orphans. Our primary focus is on education, healthcare, and shelter, as well as emotional support and vocational training. Our programsme cater to different age groups, abilities, and socioeconomic backgrounds, ensuring that every child and widow feels valued and loved. Together, we strive to restore dignity, build self-sufficiency,and socioeconomic backgrounds, ensuring that every child and widow feels valued and loved. Together, we strive to restore dignity, build self-sufficiency, and create lasting change, one life at a time.',
     itemList:[
         {title:"Shelter and Care Program"},
         {title:"Education Program"},
@@ -58,6 +58,8 @@ export const programme ={
         {title:"Reintegration and Adoption Program"},
         {title:"Spiritual and Moral Development Program"}
     ],
+
+    background:semminer,
 
    
 }

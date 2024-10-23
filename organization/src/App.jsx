@@ -8,6 +8,7 @@ import Gallery from './components/sections/Gallery'
 import Mission_Vission from './components/sections/mission'
 import Contact from './components/sections/contact'
 import Success from './components/sections/Success'
+import ProgrameAndServices from './components/sections/Programme'
 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
         </section>
         <section>
           <Mission_Vission />
+        </section>
+        <section>
+            <ProgrameAndServices />
         </section>
         <section>
           <Contact />

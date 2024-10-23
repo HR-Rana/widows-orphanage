@@ -65,8 +65,16 @@ section{
 
 } 
 
-
-
+section h3{
+  width: fit-content;
+  color: transparent;
+  background:linear-gradient(to right ,var(--assistColor), var(--primaryColor));
+  background-clip: text;
+  
+}
+p{
+  font-size: 20px;
+}
 
 
 nav ul li{
@@ -188,7 +196,7 @@ nav ul li a{
 .hero-section .title button{
   width: 30%;
   background-color: var(--primaryColor);
-  color: white;
+  color: var(--white);
   padding: 12px 20px;
   border: none;
   font-size: 20px;
@@ -347,6 +355,8 @@ nav ul li a{
   margin: 50px 0;
 }
 .sponsor-section h3{
+  display: flex;
+  margin: 0 auto;
   text-align: center;
   font-size: 36px;
   margin-bottom: 25px;
@@ -428,3 +438,83 @@ nav ul li a{
 }.mission-section .text-site p{
   font-size: 18px;
 } 
+
+
+
+
+
+
+/* Programme section */
+.programmer-section{
+  /* background: url('./assets/images/banners/programme (2).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; */
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  overflow: hidden;
+}
+.programmer-section .programme-container{
+ /* background-color: rgba(0, 0, 0, 0.549); */
+  padding: 50px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.programme-container .programme-left{
+  width: 45%;
+  display:flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}.programme-container .programme-left h3{
+  font-size: 32px;
+}.programme-container .programme-left p{
+  font-size: 22px;
+  text-align: justify;
+}
+
+.programme-container .programme-list{
+  width: 50%;
+}
+.programme-container .programme-card{
+  padding: 8px 15px;
+  border: 1px solid var(--assistColor);
+  margin: 8px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: var(--primaryColor);
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+.programme-container .programme-card h4::first-letter{
+  text-transform: uppercase;
+}
+.programme-container .programme-card h4{
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+  color:var(--white);
+  text-transform: lowercase;
+}
+.programme-container .programme-card:hover{
+  background-color: transparent;
+  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+}
+.programme-container .programme-card:hover h4{
+  color: black;
+}
