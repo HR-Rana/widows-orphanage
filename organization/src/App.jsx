@@ -9,6 +9,7 @@ import Mission_Vission from './components/sections/mission'
 import Contact from './components/sections/contact'
 import Success from './components/sections/Success'
 import ProgrameAndServices from './components/sections/Programme'
+import Footer from './components/footer/Footer'
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <section>
           <Contact />
         </section>
+        <Footer />
       </main>
     </BrowserRouter>
   )

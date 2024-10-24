@@ -598,3 +598,12 @@ nav ul li a{
   font-weight: 600;
   letter-spacing: 1px;
 }
+
+
+
+
+.Footer-section{
+  background-color: gainsboro;
+  padding: 45px 0;
+  text-align: center;
+}
