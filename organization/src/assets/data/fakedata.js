@@ -164,4 +164,17 @@ export const missionVission = {
 
 
 
-
+export const ContactInfo = {
+    title:"Contact Us",
+    infos:[
+        {title:"Address", text:"123 Main St, City, State, Zip"},
+        {title:"Phone", text:"(123) 456-7890"},
+        {title:"Email", text:"info@example.com"},
+    ],
+    socialMedia:[
+        {icon:"facebook", link:"https://www.facebook.com/example"},
+        {icon:"twitter", link:"https://www.twitter.com/example"},
+        {icon:"instagram", link:"https://www.instagram.com/example"},
+        {icon:"linkedin", link:"https://www.linkedin.com/example"}
+    ]
+}

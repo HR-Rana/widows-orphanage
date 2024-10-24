@@ -34,7 +34,8 @@
 }
 
 html{
-  scroll-behavior: smooth scroll;
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
 
 
@@ -59,10 +60,9 @@ html{
 }
 
 section{
-  padding: 0px 10px;
   margin: 50px 0;
   padding: 75px 10px; 
-
+  overflow-x: hidden;
 } 
 
 section h3{
@@ -75,6 +75,20 @@ section h3{
 p{
   font-size: 20px;
 }
+
+
+
+
+
+
+
+
+header{
+
+
+}
+
+
 
 
 nav ul li{
@@ -93,6 +107,7 @@ nav ul li a {
 
 .navigation-bar{
   background-color: white;
+  overflow: hidden;
 }
 .header-top{
   background-color: white;
@@ -102,6 +117,11 @@ nav ul li a {
 
 .navigation-bar .header-top{
  padding: 10px;
+}
+.navigation-bar p{
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .navigation-bar .socials{
   width: 25%;
@@ -517,4 +537,64 @@ nav ul li a{
 }
 .programme-container .programme-card:hover h4{
   color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact section */
+
+.contact-section{}
+.contact-section h3{
+  text-align: center;
+  font-size: 36px;
+  margin: 30px auto;
+}
+.contact-section > div{
+  margin-top: 55px;
+  padding: 10px 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-container > div{
+  width: 28%;
+  display: flex;
+  gap: 10px 0;
+  margin: 15px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  box-shadow: 0px 0px 5px 1px rgba(172, 172, 172, 0.433);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.contact-container span{
+  font-size: 40px;
+  color: var(--assistColor);
+}
+.contact-container h4{
+  font-size: 30px;
+  color: transparent;
+  background: linear-gradient(to right, var(--assistColor), var(--primaryColor));
+  background-clip: text;
+}
+.contact-container p{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
