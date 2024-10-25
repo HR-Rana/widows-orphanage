@@ -32,5 +32,4 @@ const model = new Schema({
 
 
 const heroModel = mongoose.model("Hero", model);
-
 module.exports = heroModel;
