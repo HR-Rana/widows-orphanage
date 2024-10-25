@@ -6,10 +6,10 @@ const router = express.Router();
 
 
 
-router.get('/HeroSection', getHerodata)
-router.post("HeroSection", postHerodata)
-router.put("HeroSection", updateHerodata)
-router.delete("HeroSection", deleteHerodata)
+router.get('/HeroSection',   getHerodata)
+router.post("/HeroSection", postHerodata)
+router.put("/HeroSection", updateHerodata)
+router.delete("/HeroSection", deleteHerodata)
 
 
 
@@ -17,9 +17,9 @@ router.delete("HeroSection", deleteHerodata)
 
 
 router.get('/AboutSection', getAboutData)
-router.post("AboutSection", postAboutData)
-router.put("AboutSection", updateAboutData)
-router.delete("HeroSection", deleteHerodata)
+router.post("/AboutSection", postAboutData)
+router.put("/AboutSection", updateAboutData)
+router.delete("/HeroSection", deleteHerodata)
 
 
 
@@ -27,9 +27,9 @@ router.delete("HeroSection", deleteHerodata)
 
 
 router.get('/AboutSection', getAboutData)
-router.post("AboutSection", postAboutData)
-router.put("AboutSection", updateAboutData)
-router.delete("HeroSection", deleteHerodata)
+router.post("/AboutSection", postAboutData)
+router.put("/AboutSection", updateAboutData)
+router.delete("/HeroSection", deleteHerodata)
 
 
 

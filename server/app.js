@@ -4,6 +4,7 @@ const cors = require('cors');
 const router = require('./router/adminRouter');
 
 
+
 app.use(cors())
 
 app.use('/admin', router)
