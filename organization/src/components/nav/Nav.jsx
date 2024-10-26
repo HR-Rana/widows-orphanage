@@ -10,10 +10,10 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Nav() {
     const navItems = [
-        {
-            label: 'Home',
-            path: '#'
-        },
+        // {
+        //     label: 'Home',
+        //     path: '#'
+        // },
         {
             label: 'About',
             path: '#About'
@@ -23,11 +23,12 @@ export default function Nav() {
             path: '#Programme'
         },
         {
-            label:"Success Stories",
-            path:'#success-stories'
-        },{
             label:"Mission",
             path:'#Mission'
+        },
+        {
+            label:"Achivements",
+            path:'#Achivements'
         },{
             label:"Contact us",
             path:'#Contact-us'

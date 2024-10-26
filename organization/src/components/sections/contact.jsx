@@ -10,7 +10,7 @@ import { IoMdMail } from "react-icons/io";
 export default function Contact() {
 
   return (
-    <div className='contact-section'>
+    <div className='contact-section' id='Contact-us'>
       <h3>{ContactInfo.title}</h3>
         <div className="contact-container flex justify-between">
             {

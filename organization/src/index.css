@@ -77,6 +77,12 @@ p{
 }
 
 
+h1, h2, h3{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ letter-spacing: 1.5px;
+}
+
+
 
 
 
@@ -97,6 +103,7 @@ nav ul li{
 }
 nav ul li a {
   cursor: pointer;
+
 }
 .width-fit{
   width: fit-content;
@@ -138,7 +145,7 @@ nav ul li a {
   color: var(--assistColor);
 }
 .navigation-bar .socials li svg{
-  font-size: 22px;
+  font-size: 25px;
 }
 .navs-container{
   padding: 10px;
@@ -179,7 +186,7 @@ nav ul li{}
 nav ul li a{
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   color: black;
 }
 
@@ -544,10 +551,83 @@ nav ul li a{
 
 
 
+.achivement-section{
+  padding: 50px 25px;
+}
+.achivement-section > h3{
+  text-align: center;
+  font-size: 42px;
+  margin: 30px auto;
+}
+.achivement-section .achivement-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 55px 0;
+ 
+}
+.achivement-section .achivment-container h3{
+  font-size: 24px;
+  margin-bottom: 15px;
 
+}.achivement-section h2{
+  font-weight: 36px;
+  width: fit-content;
+  margin:25px auto;
+  color: transparent;
+  background: linear-gradient(to right, var(--assistColor), var(--primaryColor));
+  background-clip: text;
+}
+.achivement-section .details{
+  width: 100%;
+  height: 100%;
+}
+.achivement-container .cards{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}.achivement-container .info{
+  width: 23.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+  color: rgb(0, 0, 0);
+  margin: 25px 0;
+  padding: 25px 15px;
+  border-radius: 15px;
+  background:linear-gradient(110deg, rgb(241, 241, 241), rgba(195, 195, 195, 0.264));
+  box-shadow: 0px 0px 4px rgba(102, 102, 102, 0.182);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
 
+.achivement-container .info h4{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.achivement-container .info h2{
+  font-size: 36px;
+  width: fit-content;
+  margin:15px auto;
+  color: transparent;
+  background: linear-gradient(to right, var(--assistColor), var(--primaryColor));
+  background-clip: text;
+}
 
-
+.achivement-container .details h3{
+ font-size: 28px;
+ border-bottom: 4px solid rgb(142, 142, 142) !important;
+ border-radius: 10px;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+}
 
 
 

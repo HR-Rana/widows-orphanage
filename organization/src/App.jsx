@@ -31,14 +31,15 @@ function App() {
         <section>
           <Gallery />
         </section>
-        <section>
-            <Success />
-        </section>
+       
         <section>
           <Mission_Vission />
         </section>
         <section>
             <ProgrameAndServices />
+        </section>
+        <section>
+            <Success />
         </section>
         <section>
           <Contact />
