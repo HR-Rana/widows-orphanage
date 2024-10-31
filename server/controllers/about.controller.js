@@ -6,6 +6,7 @@ const aboutModel = require("../models/about.model");
  const postAboutData = async(req, res) => {
       const text = req.body.text;
       const image = req.body.file;
+      console.log("it's working...")
  };
 
  const getAboutData = async(req, res) => {

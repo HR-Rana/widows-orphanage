@@ -4,7 +4,8 @@ const getAdmin = (req, res) =>{
     const email = req.body.email;
     const password = req.body.password;
 
-    res.send(email, password)
+    res.send(email, password);
+    console.log(email, password);
 }
 
 
