@@ -62,7 +62,7 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <div>
+        <div className='gallery-items'>
         {all < 1 ? <p style={{color:'red'}}>there are no itmes available</p>
              :
           all.map((items, index) => {
@@ -76,7 +76,7 @@ export default function BasicTabs() {
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <div>
+        <div className='gallery-items'>
             {orphanage < 1 ? <p style={{color:'red'}}>there are no itmes available</p>
              :
               orphanage.map((items, index) => {
@@ -90,7 +90,7 @@ export default function BasicTabs() {
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <div>
+        <div className='gallery-items'>
             {widows < 1 ? <p style={{color:'red'}}>there are no itmes available</p>
              : widows.map((items, index) => {
                 return (
@@ -103,7 +103,7 @@ export default function BasicTabs() {
         </div>
       </CustomTabPanel> 
       <CustomTabPanel value={value} index={3}>
-        <div>
+        <div className='gallery-items'>
             {
               videos.map((items, index) => {
                 return (
