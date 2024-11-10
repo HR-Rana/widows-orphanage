@@ -1,107 +1,122 @@
-import React from 'react'
-import { useState } from 'react'
-import { Gallary, GallaryVideos } from '../../assets/data/fakedata'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
-import Pagination from '../pagination/pagination';
+import * as React from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import { useState } from 'react';
+import { Gallary, GallaryVideos } from '../../assets/data/fakedata';
 
 
 
-
-export default function Gallery() {
-
-  const [filter, setFilter] = useState(Gallary)
-  const [video, setVideo] = useState(GallaryVideos)
-
-
-  const handleTabClick = (types) => {
-     const setTypes = Gallary.filter((elem, i) =>{
-      return elem.catagory === types;
-     })
-     console.log(setTypes)
-     setFilter(setTypes)
-  }
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
 
 
   return (
-    <Tabs>
-    <TabList>
-    <div className='tabs-items'>
-        <Tab onClick={()=>{setFilter(Gallary)}}><li>all</li></Tab>
-      <Tab onClick={()=>{handleTabClick("orphanage")}}><li >Orphanage</li></Tab>
-      <Tab onClick={()=>{handleTabClick("widows")}}><li >widows</li></Tab>
-      <Tab><li>Videos</li></Tab>
-        </div>
-    </TabList>
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+    </div>
+  );
+}
 
-    <TabPanel>
-    <div className='gallery-items'>
-          {
-            filter.map((items, index)=>{
-              return (
-                <div key={index} className='item'>
-                  <img src={items.image} alt={items.name}/>
-                </div>
-              )
-            })
-          }
-        </div>
-    </TabPanel>
-    <TabPanel>
-    <div className='gallery-items'>
-          {
-            filter.map((items, index)=>{
-              return (
-                <div key={index} className='item'>
-                  <img src={items.image} alt={items.name}/>
-                  <div className='gallery-item-info'>
-                    <h3>{items.name}</h3>
-                    <p>{items.description}</p>
-                  </div>
-                </div>
-              )
-            })
-          }
-        </div>
-    </TabPanel> 
-    <TabPanel>
-    <div className='gallery-items'>
-          {
-            filter.map((items, index)=>{
-              return (
-                <div key={index} className='item'>
-                  <img src={items.image} alt={items.name}/>
-                  <div className='gallery-item-info'>
-                    <h3>{items.name}</h3>
-                    <p>{items.description}</p>
-                  </div>
-                </div>
-              )
-            })
-          }
-        </div>
-    </TabPanel> 
-    <TabPanel>
-    <div className='gallery-items'>
-          {
-            video.map((items, index)=>{
-              return (
-                <div key={index} className='item'>
-                  <video src={'https://www.youtube.com/watch?v=l8QMO7DM5vc&pp=ygUGd2lkb3dz'} controls width={'100%'} type="video/mp4"></video>
-                </div>
-              )
-            })
-          }
-        </div>
-    </TabPanel>
-      <div className="pagination">
-          <Pagination />
-      </div>
-  </Tabs>
-
-  )
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
 }
 
 
+export default function BasicTabs() {
+  const [value, setValue] = React.useState(0);
+  const [all, setAll] = useState(Gallary)
+  const [orphanage, setOrpahange] = useState([])
+  const [widows, setWidows] = useState([]);
+  const [videos, setVideos] = useState(GallaryVideos);
+
+
+
+  const widowsData = Gallary.filter((items)=> items.catagory === "widows");
+  const orphanageData = Gallary.filter((items)=> items.catagory === "orphanage");
+  
+ 
+
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab label="All" {...a11yProps(0)} onClick={()=>setAll(Gallary)} />
+          <Tab label="Orphanage" {...a11yProps(1)} onClick={()=>{setOrpahange(orphanageData)}} />
+          <Tab label="Widows" {...a11yProps(2)} onClick={()=>{ setWidows(widowsData)}} />
+          <Tab label="Videos" {...a11yProps(3)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+        <div>
+        {all < 1 ? <p style={{color:'red'}}>there are no itmes available</p>
+             :
+          all.map((items, index) => {
+            return (
+              <div key={index} className='item'>
+                <img src={items.image} alt={items.alt} width={'100%'} />
+              </div>
+            )
+          })
+        }
+        </div>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+        <div>
+            {orphanage < 1 ? <p style={{color:'red'}}>there are no itmes available</p>
+             :
+              orphanage.map((items, index) => {
+                return (
+                  <div key={index} className='item'>
+                    <img src={items.image} alt={items.alt} width={'100%'} />
+                  </div>
+                )
+              })
+            }
+        </div>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+        <div>
+            {widows < 1 ? <p style={{color:'red'}}>there are no itmes available</p>
+             : widows.map((items, index) => {
+                return (
+                  <div key={index} className='item'>
+                    <img src={items.image} alt={items.alt} width={'100%'} />
+                  </div>
+                )
+              })
+            }
+        </div>
+      </CustomTabPanel> 
+      <CustomTabPanel value={value} index={3}>
+        <div>
+            {
+              videos.map((items, index) => {
+                return (
+                  <div key={index} className='item'>
+                    <video src={items.url} controls width={'100%'} type="video/mp4"></video>
+                  </div>
+                )
+              })
+            }
+        </div>
+      </CustomTabPanel>
+    </Box>
+  );
+}
 
 

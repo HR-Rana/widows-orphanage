@@ -8,16 +8,7 @@
 
 
 :root{
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background-color: rgb(240, 240, 240);
-  background-image:
-  url('https://images.unsplash.com/photo-1615800098779-1be32e60cca3?q=80&w=1310&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
 
 
 
@@ -36,7 +27,26 @@
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
+  overflow-x: hidden;
 }
+
+
+
+body{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgb(240, 240, 240);
+  background-image:
+  url('https://images.unsplash.com/photo-1615800098779-1be32e60cca3?q=80&w=1310&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+
 
 
 .flex{
@@ -87,12 +97,6 @@ h1, h2, h3{
 
 
 
-
-
-header{
-
-
-}
 
 
 
@@ -687,3 +691,4 @@ nav ul li a{
   padding: 45px 0;
   text-align: center;
 }
+

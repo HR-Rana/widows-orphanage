@@ -8,7 +8,7 @@ const router = express.Router()
 router.get('/HeroSection',   getHerodata)
 router.post("/HeroSection", postHerodata)
 router.put("/HeroSection", updateHerodata)
-router.delete("/HeroSection", deleteHerodata)
+
 
 
 
