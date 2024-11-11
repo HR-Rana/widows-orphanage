@@ -108,7 +108,7 @@ export default function BasicTabs() {
               videos.map((items, index) => {
                 return (
                   <div key={index} className='item'>
-                    <video src={items.url} controls width={'100%'} type="video/mp4"></video>
+                        <iframe width="100%" height="363" src="https://www.youtube.com/embed/iUtnZpzkbG8?list=PLGoWuvyH709vpTCVrjaJtaaFfite9U6u8" title="No Copyright Drone Shots | Royalty free drone shots | free stock videos | Drone footage nature shots" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullscreen></iframe>
                   </div>
                 )
               })

@@ -97,11 +97,11 @@ export const Gallary = [
         ]
 
 export const GallaryVideos = [
-    {image:"https://www.youtube.com/watch?v=l8QMO7DM5vc&pp=ygUGd2lkb3dz", alt:"orphan5", catagory:"video"},
-    {image:"https://www.youtube.com/watch?v=g1FklcCOxEU&pp=ygUGd2lkb3dz", alt:"orphan5", catagory:"video"},
-    {image:'https://www.youtube.com/watch?v=9_KlDtmhSYY&pp=ygUJb3JwaGFuYWdl', alt:"orphan5", catagory:"video"},
-    {image:"https://www.youtube.com/watch?v=2lLZedgFJsw&pp=ygUJb3JwaGFuYWdl", alt:"orphan5", catagory:"video"},
-    {image:"https://www.youtube.com/watch?v=82yTzlXeIwE&pp=ygUGd2lkb3dz", alt:"orphan5", catagory:"video"},
+    {url:"https://youtu.be/Hz1b3KkUk9w", alt:"orphan5", catagory:"video"},
+    {url:"https://youtu.be/HkuKHwetV6Q", alt:"orphan5", catagory:"video"},
+    {url:'https://www.youtube.com/watch?v=e2F4pYB3Vik&pp=ygUOaGVscCB0byB3aWRvd3M%3D', alt:"orphan5", catagory:"video"},
+    {url:"https://www.youtube.com/watch?v=TV-o3m5Eg7g&pp=ygUOaGVscCB0byB3aWRvd3M%3D", alt:"orphan5", catagory:"video"},
+    {url:"https://www.youtube.com/watch?v=DB7aXkCAhkc&pp=ygUPb3JwaGFuYWdlIGluIHVr", alt:"orphan5", catagory:"video"},
 ]
 
 
