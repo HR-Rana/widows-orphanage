@@ -85,24 +85,22 @@ import orphanage5 from '../images/gallary/orphanage (5).jpg'
 
 export const Gallary = [
             {image:widow1, alt:"widow1", catagory:"widows"},
+            {url:'https://www.youtube.com/watch?v=e2F4pYB3Vik&pp=ygUOaGVscCB0byB3aWRvd3M%3D', alt:"orphan5", catagory:"video"},
             {image:orphanage1, alt:"orphan1", catagory:"orphanage"},
             {image:widow2, alt:"widow2", catagory:"widows"},
             {image:orphanage3, alt:"orphan4", catagory:"orphanage"},
+            {url:"https://youtu.be/Hz1b3KkUk9w", alt:"orphan5", catagory:"video"},
             {image:widow3, alt:"widow3", catagory:"widows"},
             {image:widow4, alt:"widow4", catagory:"widows"},
+            {url:"https://www.youtube.com/watch?v=TV-o3m5Eg7g&pp=ygUOaGVscCB0byB3aWRvd3M%3D", alt:"orphan5", catagory:"video"},
             {image:orphanage4, alt:"orphan3", catagory:"orphanage"},
             {image:widow5, alt:"widow5", catagory:"widows"},
             {image:orphanage2, alt:"orphan2", catagory:"orphanage"},
             {image:orphanage5, alt:"orphan5", catagory:"orphanage"},
+            {url:"https://youtu.be/HkuKHwetV6Q", alt:"orphan5", catagory:"video"},
+            {url:"https://www.youtube.com/watch?v=DB7aXkCAhkc&pp=ygUPb3JwaGFuYWdlIGluIHVr", alt:"orphan5", catagory:"video"},
         ]
 
-export const GallaryVideos = [
-    {url:"https://youtu.be/Hz1b3KkUk9w", alt:"orphan5", catagory:"video"},
-    {url:"https://youtu.be/HkuKHwetV6Q", alt:"orphan5", catagory:"video"},
-    {url:'https://www.youtube.com/watch?v=e2F4pYB3Vik&pp=ygUOaGVscCB0byB3aWRvd3M%3D', alt:"orphan5", catagory:"video"},
-    {url:"https://www.youtube.com/watch?v=TV-o3m5Eg7g&pp=ygUOaGVscCB0byB3aWRvd3M%3D", alt:"orphan5", catagory:"video"},
-    {url:"https://www.youtube.com/watch?v=DB7aXkCAhkc&pp=ygUPb3JwaGFuYWdlIGluIHVr", alt:"orphan5", catagory:"video"},
-]
 
 
 

@@ -1,9 +1,16 @@
+const express = require('express');
 const { createAdmin, getAdmin } = require("../controllers/admin.controller");
-const router = require("./adminRouter");
+const adminAccess = express.Router();
 
 
 
-router.post("/admin", createAdmin);
 
-router.get("/get-admin", getAdmin)
+adminAccess.post("/admin", createAdmin);
 
+adminAccess.get("/get-admin", getAdmin)
+
+
+
+
+
+module.exports = adminAccess;

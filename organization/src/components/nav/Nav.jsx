@@ -40,10 +40,10 @@ export default function Nav() {
             <p>Together We Care, Together We Thrive.</p>
             <div className="socials ">
                 <ul className='flex justify-between width-fit gap-10 list-none'>
-                    <li><Link to={"/"}><FaLinkedin/></Link></li>
-                    <li><Link to={"/"}><FaYoutube/></Link></li>
-                    <li><Link to={"/"}><FaFacebookSquare/></Link></li>
-                    <li><Link to={"/"}><FaSquareXTwitter/></Link></li>
+                    <li><Link to={"https://www.linkedin.com/feed/"} target='_blank'><FaLinkedin/></Link></li>
+                    <li><Link to={"https://www.youtube.com/"} target='_blank'><FaYoutube/></Link></li>
+                    <li><Link to={"https://www.facebook.com/"} target='_blank'><FaFacebookSquare/></Link></li>
+                    <li><Link to={"https://x.com/?lang=en"} target='_blank'><FaSquareXTwitter/></Link></li>
                 </ul>
             </div>
         </div>

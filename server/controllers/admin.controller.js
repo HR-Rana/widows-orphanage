@@ -1,3 +1,4 @@
+const adminModel = require("../models/user.module");
 
 
 const getAdmin = (req, res) =>{
@@ -9,8 +10,20 @@ const getAdmin = (req, res) =>{
 }
 
 
-const createAdmin = (req, res) =>{
+const createAdmin = async (req, res) =>{
     res.send("admin created");
+    console.log(req);
+
+
+    try {
+        const User = await adminModel.create({
+          
+        })
+    } catch (error) {
+        
+    }
+
+
 }
 
 
